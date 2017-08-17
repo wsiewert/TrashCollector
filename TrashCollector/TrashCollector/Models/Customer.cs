@@ -15,6 +15,9 @@ namespace TrashCollector.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int ZipCode { get; set; }
-        public decimal AmountOwed { get; set; }
+
+        [ForeignKey("TrashPickup")]
+        public int TrashPickupId { get; set; }
+        public TrashPickup TrashPickup { get; set; }
     }
 }

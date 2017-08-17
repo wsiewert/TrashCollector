@@ -154,6 +154,7 @@ namespace TrashCollector.Controllers
                 Customer customer = new Customer();
                 customer.FirstName = model.FirstName;
                 customer.LastName = model.LastName;
+                customer.ZipCode = model.ZipCode;
 
                 var user = new ApplicationUser {
                     UserName = model.Email,

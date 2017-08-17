@@ -85,6 +85,10 @@ namespace TrashCollector.Models
 
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
+
+        [Required]
+        [Display(Name = "Zip Code")]
+        public int ZipCode { get; set; }
     }
 
     public class ResetPasswordViewModel

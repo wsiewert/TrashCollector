@@ -219,11 +219,20 @@
     <Compile Include="Migrations\201708171306295_added foreign key.Designer.cs">
       <DependentUpon>201708171306295_added foreign key.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708172038204_added Trash Pickup.cs" />
+    <Compile Include="Migrations\201708172038204_added Trash Pickup.Designer.cs">
+      <DependentUpon>201708172038204_added Trash Pickup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708172058140_added foreign key to customer.cs" />
+    <Compile Include="Migrations\201708172058140_added foreign key to customer.Designer.cs">
+      <DependentUpon>201708172058140_added foreign key to customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\TrashPickup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -326,6 +335,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708171306295_added foreign key.resx">
       <DependentUpon>201708171306295_added foreign key.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708172038204_added Trash Pickup.resx">
+      <DependentUpon>201708172038204_added Trash Pickup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708172058140_added foreign key to customer.resx">
+      <DependentUpon>201708172058140_added foreign key to customer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
