@@ -79,6 +79,8 @@ namespace TrashCollector.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        //TODO: add foreign key references here. this will be displayed on the page when registering.
     }
 
     public class ResetPasswordViewModel

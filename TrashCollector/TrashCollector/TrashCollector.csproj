@@ -189,6 +189,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -201,6 +202,22 @@
     <Compile Include="Migrations\201708152132537_added customer table.cs" />
     <Compile Include="Migrations\201708152132537_added customer table.Designer.cs">
       <DependentUpon>201708152132537_added customer table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708161310423_modified customer table.cs" />
+    <Compile Include="Migrations\201708161310423_modified customer table.Designer.cs">
+      <DependentUpon>201708161310423_modified customer table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162138502_added column.cs" />
+    <Compile Include="Migrations\201708162138502_added column.Designer.cs">
+      <DependentUpon>201708162138502_added column.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708171241076_added aspnetusers foreign key.cs" />
+    <Compile Include="Migrations\201708171241076_added aspnetusers foreign key.Designer.cs">
+      <DependentUpon>201708171241076_added aspnetusers foreign key.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708171306295_added foreign key.cs" />
+    <Compile Include="Migrations\201708171306295_added foreign key.Designer.cs">
+      <DependentUpon>201708171306295_added foreign key.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -267,6 +284,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Customers\Create.cshtml" />
+    <Content Include="Views\Customers\Delete.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Customers\Edit.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -292,6 +314,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708152132537_added customer table.resx">
       <DependentUpon>201708152132537_added customer table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708161310423_modified customer table.resx">
+      <DependentUpon>201708161310423_modified customer table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162138502_added column.resx">
+      <DependentUpon>201708162138502_added column.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708171241076_added aspnetusers foreign key.resx">
+      <DependentUpon>201708171241076_added aspnetusers foreign key.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708171306295_added foreign key.resx">
+      <DependentUpon>201708171306295_added foreign key.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
