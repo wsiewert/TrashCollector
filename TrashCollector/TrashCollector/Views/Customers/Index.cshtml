@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<TrashCollector.Models.Customer>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Account Details";
 }
 
 <h2>Index</h2>
@@ -23,6 +23,12 @@
         <th>
             @Html.DisplayNameFor(model => model.PickupDay)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangePickup)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AmountOwed)
+        </th>
     </tr>
 
 @foreach (var item in Model) {
@@ -38,6 +44,12 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.PickupDay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangePickup)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AmountOwed)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
