@@ -4,7 +4,7 @@
     ViewBag.Title = "Account Details";
 }
 
-<h2>Index</h2>
+<h2>Account Info </h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -21,10 +21,10 @@
             @Html.DisplayNameFor(model => model.ZipCode)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PickupDay)
+            @Html.DisplayNameFor(model => model.ChangePickup)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ChangePickup)
+            @Html.DisplayNameFor(model => model.DayOfWeek.Day)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.AmountOwed)
@@ -43,10 +43,10 @@
             @Html.DisplayFor(modelItem => item.ZipCode)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.PickupDay)
+            @Html.DisplayFor(modelItem => item.ChangePickup)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ChangePickup)
+            @Html.DisplayFor(modelItem => item.DayOfWeek.Day)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.AmountOwed)

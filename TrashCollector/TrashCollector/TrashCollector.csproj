@@ -231,9 +231,34 @@
     <Compile Include="Migrations\201708172152261_merged customer and trashcollector.Designer.cs">
       <DependentUpon>201708172152261_merged customer and trashcollector.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708211304450_days of week.cs" />
+    <Compile Include="Migrations\201708211304450_days of week.Designer.cs">
+      <DependentUpon>201708211304450_days of week.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708211316222_days of week migration.cs" />
+    <Compile Include="Migrations\201708211316222_days of week migration.Designer.cs">
+      <DependentUpon>201708211316222_days of week migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708211353335_updated Customer table.cs" />
+    <Compile Include="Migrations\201708211353335_updated Customer table.Designer.cs">
+      <DependentUpon>201708211353335_updated Customer table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708211433263_updated customers table.cs" />
+    <Compile Include="Migrations\201708211433263_updated customers table.Designer.cs">
+      <DependentUpon>201708211433263_updated customers table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708211651360_update.cs" />
+    <Compile Include="Migrations\201708211651360_update.Designer.cs">
+      <DependentUpon>201708211651360_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708211925405_fixed dayofweek id.cs" />
+    <Compile Include="Migrations\201708211925405_fixed dayofweek id.Designer.cs">
+      <DependentUpon>201708211925405_fixed dayofweek id.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\DaysOfWeek.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -347,6 +372,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708172152261_merged customer and trashcollector.resx">
       <DependentUpon>201708172152261_merged customer and trashcollector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708211304450_days of week.resx">
+      <DependentUpon>201708211304450_days of week.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708211316222_days of week migration.resx">
+      <DependentUpon>201708211316222_days of week migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708211353335_updated Customer table.resx">
+      <DependentUpon>201708211353335_updated Customer table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708211433263_updated customers table.resx">
+      <DependentUpon>201708211433263_updated customers table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708211651360_update.resx">
+      <DependentUpon>201708211651360_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708211925405_fixed dayofweek id.resx">
+      <DependentUpon>201708211925405_fixed dayofweek id.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

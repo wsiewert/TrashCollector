@@ -50,6 +50,7 @@ namespace TrashCollector.Controllers
         {
             if (ModelState.IsValid)
             {
+                customer.DayOfWeekId = 1;
                 db.Customers.Add(customer);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -66,6 +67,7 @@ namespace TrashCollector.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Customer customer = db.Customers.Find(id);
+            customer.DaysOfWeek = db.DaysOfWeek.ToList();
             if (customer == null)
             {
                 return HttpNotFound();
@@ -78,8 +80,10 @@ namespace TrashCollector.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,ZipCode,AmountOwed")] Customer customer)
+        //public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,ZipCode,AmountOwed,PickupDay")] Customer customer)
+        public ActionResult Edit(Customer customer)
         {
+
             if (ModelState.IsValid)
             {
                 db.Entry(customer).State = EntityState.Modified;

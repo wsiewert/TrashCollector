@@ -156,7 +156,6 @@ namespace TrashCollector.Controllers
                 customer.LastName = model.LastName;
                 customer.ZipCode = model.ZipCode;
                 customer.AmountOwed = 0.00m;
-                customer.PickupDay = "Monday";
 
                 var user = new ApplicationUser {
                     UserName = model.Email,
