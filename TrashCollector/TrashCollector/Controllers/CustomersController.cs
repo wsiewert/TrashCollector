@@ -123,5 +123,7 @@ namespace TrashCollector.Controllers
             }
             base.Dispose(disposing);
         }
+
+        //Add 'update payment method'
     }
 }
