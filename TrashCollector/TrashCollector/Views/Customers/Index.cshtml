@@ -20,9 +20,9 @@
         <th>
             @Html.DisplayNameFor(model => model.ZipCode)
         </th>
-        <th>
+        @*<th>
             @Html.DisplayNameFor(model => model.ChangePickup)
-        </th>
+        </th>*@
         <th>
             @Html.DisplayNameFor(model => model.DayOfWeek.Day)
         </th>
@@ -42,11 +42,11 @@
         <td>
             @Html.DisplayFor(modelItem => item.ZipCode)
         </td>
-        <td>
+        @*<td>
             @Html.DisplayFor(modelItem => item.ChangePickup)
-        </td>
+        </td>*@
         <td>
-            @Html.DisplayFor(modelItem => item.DayOfWeek.Day)
+            @Html.DisplayFor(modelItem => item.DayOfWeekId)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.AmountOwed)

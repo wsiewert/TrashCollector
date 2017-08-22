@@ -255,6 +255,10 @@
     <Compile Include="Migrations\201708211925405_fixed dayofweek id.Designer.cs">
       <DependentUpon>201708211925405_fixed dayofweek id.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708221421119_fixed day of week.cs" />
+    <Compile Include="Migrations\201708221421119_fixed day of week.Designer.cs">
+      <DependentUpon>201708221421119_fixed day of week.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -265,6 +269,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -287,7 +292,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -390,6 +397,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708211925405_fixed dayofweek id.resx">
       <DependentUpon>201708211925405_fixed dayofweek id.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708221421119_fixed day of week.resx">
+      <DependentUpon>201708221421119_fixed day of week.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

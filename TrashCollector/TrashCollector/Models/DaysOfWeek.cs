@@ -10,7 +10,7 @@ namespace TrashCollector.Models
     {
         [Key]
         public int Id { get; set; }
-        [Display(Name = "Day of Week")]
+        [Display(Name = "Pickup Day")]
         public string Day { get; set; }
     }
 }
